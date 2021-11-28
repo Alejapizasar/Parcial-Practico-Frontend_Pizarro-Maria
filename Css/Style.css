@@ -82,3 +82,16 @@ h1 {
     display: flex;
 }
 /* aqui empieza el footer que estara dividido en dos partes*/
+footer{
+    display: flex;
+    flex-direction: column;
+}
+/* seccion naranja*/
+#seccionNaranja {
+    background-color: #f3613c;
+}
+/*seccion oscura*/
+#seccionOscura {
+    background-color: #1E1E26;
+    display: flex;
+}
