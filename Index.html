@@ -15,16 +15,16 @@
     <header>
         <img src="Img/logo.svg"  id="imgHeader" alt="Logo">
 <!-- esta parte desaparece en el diseño mobil -->
-        <nav>
+        <nav id="navHeader">
             <ul id="listaHeader" type="none">
                 <li><a href="https://www.google.com/" class="aHeader">Pricing</a></li>
                 <li><a href="https://www.google.com/" class="aHeader">Product</a></li>
-                <li><a href="https://www.google.com/" class="aHeader">Abour us</a></li>
+                <li><a href="https://www.google.com/" class="aHeader">About us</a></li>
                 <li><a href="https://www.google.com/" class="aHeader">Careers</a></li>
                 <li><a href="https://www.google.com/" class="aHeader">Community</a></li>
             </ul>
         </nav>
-        <p class="botones"><a href="https://www.google.com/" class="aButtom">Get Started</a></p>
+        <button class="botones"> <a href="https://www.google.com/" class="aBoton">Get Started</a></button>
 <!-- diseño mobil hamburger menu escondido en desktop-->
         <!-- <nav role="navigation">
             <div id="menuToggle">
@@ -43,34 +43,40 @@
     <main>
         <section id="seccionMain">
             <h1>Bring everyone together to build better products.</h1>
-            <p id="parrafoMain">Manage makes it simple for software teams to plan day-to-day tasks while keeping the large team goals in view </p>
-            <p class="botones"><a href="https://www.google.com/" class="aButtom">Get Started</a></p>
+            <p class="parrafo">Manage makes it simple for software teams to plan day-to-day tasks while keeping the large team goals in view </p>
+            <button class="botones"> <a href="https://www.google.com/" class="aBoton">Get Started</a></button>
         </section>
         <section>
             <img src="Img/illustration-intro.svg" alt="graficos">
         </section>
     </main>
-<!-- aqui empieza la seccion donde el subtitulo y parrafos enumerados -->
+<!-- aqui empieza la seccion del subtitulo y parrafos enumerados -->
     <section id="seccionSubtitulos">
         <article>
-            <h2>What´s different about Manage? </h2>
-            <p>Manage provides all the functionality your teas needs, without the complexity. Our software is tailor-made for modern digital product teams</p>
+            <h2 id="subtitulo">What´s different about Manage? </h2>
+            <p class="parrafo">Manage provides all the functionality your teas needs, without the complexity. Our software is tailor-made for modern digital product teams</p>
         </article>
         <article id="parrafosNumerados">
-            <div>
-                <p>1</p>
-                <h4>Track company-wide progress</h4>
-                <p>See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
+            <div class="cajas-numerosParrafos">
+                <p class="numeros"> 01 </p>
+                <div class="parrafos-conNumeros">
+                    <h4 class="h4-SubNumero">Track company-wide progress</h4>
+                    <p class="p-SubNumero">See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
+                </div>
             </div>
-            <div>
-                <p>2</p>
-                <h4>Advance built-in reports</h4>
-                <p>Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
+            <div class="cajas-numerosParrafos">
+                <p class="numeros"> 02 </p>
+                <div class="parrafos-conNumeros"> 
+                    <h4 class="h4-SubNumero">Advance built-in reports</h4>
+                    <p class="p-SubNumero">Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
+                </div>
             </div>
-            <div>
-                <p>3</p>
-                <h4>Everything you need in one place</h4>
-                <p>Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
+            <div class="cajas-numerosParrafos" >
+                <p class="numeros"> 03 </p>
+                <div class="parrafos-conNumeros">
+                    <h4 class="h4-SubNumero">Everything you need in one place</h4>
+                    <p class="p-SubNumero">Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
+                </div>
             </div>
         </article>
     </section>
@@ -97,7 +103,7 @@
             </div>
         </article>
         <article>
-            <p class="botones"><a href="https://www.google.com/" class="aButtom">Get Started</a></p>
+            <button class="botones"> <a href="https://www.google.com/" class="aBoton">Get Started</a></button>
         </article>
     </section>
 <!-- footer, este estara dividido por secciones -->

@@ -1,5 +1,5 @@
 *{
-    margin:20px;
+    margin:0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -7,17 +7,24 @@
 header{
     display:flex;
     justify-content: space-around;
+    padding: 10px;
+    margin: 50px  40px 20px 90px;
 }
 #imgHeader{
-    width: 10%;
-    height: 10%;
     display: flex;
     align-self: center;
+}
+#navHeader{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
 }
 #listaHeader {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-grow: 0.4;
+
 }
 .aHeader{
     font-family: 'Be Vietnam Pro', sans-serif;
@@ -28,27 +35,34 @@ header{
 }
 .botones {
     background-color: #f3603b;
-    border-radius: 5%;
+    border-radius: 25px;
     display: flex;
     align-self: center;
     box-shadow: 0px 4px 7px rgb(0 0 0 / 25%);
+    padding: 10px 12px;
+    border-width: 0;
 }
-.aButtom {
+.aBoton {
     font-family: 'Be Vietnam Pro', sans-serif;
     font-weight: 500;
     font-size: 14px;
     text-decoration: none;
     color: rgb(255, 255, 255); 
 }
+
 /* Main parte principal del cuerpo de la pagina */
 main{
-    display: flex; 
-    justify-content: space-around;
+    display: flex;
+    align-items: flex-start;
+    padding: 20px 10px;
+    margin: 60px 5px 10px 90px;
 }
 #seccionMain{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-right: 60px;
 }
 h1 {
     font-family: 'Be Vietnam Pro', sans-serif;
@@ -56,21 +70,75 @@ h1 {
     font-weight: 700;
     color:#232C50;
     line-height:66px;
+    padding-bottom: 25px;
 }
-#parrafoMain {
+.parrafo {
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
+    padding: 0px 100px 30px 0px;
 }
 /* seccion subtitulos y parrafos numerados*/
 #seccionSubtitulos {
     display: flex;
     justify-content: space-around;
+    margin: 60px 5px 10px 90px;
+    padding-bottom: 30px;
 }
-#parrafosNumerados {
+#subtitulo {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color:#232C50;
+    line-height:40px;
+    padding-bottom: 20px;
+    padding-right: 90px;
+}
+.caja-numerosParrafos {
+    display: flex;
+}
+.numeros {
+    background-color: #f3603b;
+    border-radius: 25px;
+    display: flex;
+    align-self: flex-start;
+    padding: 5px 20px;
+    border-width: 0;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(255, 255, 255); 
+    margin-top: 12px;
+} 
+.cajas-numerosParrafos {
+    display: flex;
+    margin-right: 60px;
+}
+.parrafos-conNumeros{
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: flex-start;
+}
+.h4-SubNumero{
+    color: #323851;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    padding: 12px;
+}
+.p-SubNumero {
+    color: #B3B2B7;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px 10px 40px;
 }
 /* seccion sibtitulo centrado y perfiles con imagenes*/
 #seccionPerfiles{
@@ -85,6 +153,7 @@ h1 {
 footer{
     display: flex;
     flex-direction: column;
+
 }
 /* seccion naranja*/
 #seccionNaranja {
