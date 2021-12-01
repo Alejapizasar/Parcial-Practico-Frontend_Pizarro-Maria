@@ -110,43 +110,48 @@
     <footer>
 <!-- footer seccion naranja-->
         <section id="seccionNaranja">
-            <h2>Simplify hoy your team words today.</h2>
-            <p><a href="https://www.google.com/">Get Started</a></p>
+            <h2 id="orangeFooterH">Simplify hoy your team words today.</h2>
+            <button id="footer-Button"> <a href="https://www.google.com/" id="aBoton-Footer">Get Started</a></button>
         </section>
 <!-- footer seccion oscura -->
         <section id="seccionOscura">
-            <article>
+            <article id="article-Icon-Logo">
                 <div>
                     <img src="Img/Logo_footer.svg" alt="logo">
                 </div>
-                <div>
-                    <img src="Img/icon-facebook.svg" alt="logoFacebook">
-                    <img src="Img/icon-youtube.svg" alt="logoYoutube">
-                    <img src="Img/icon-twitter.svg" alt="logoTwitter">
-                    <img src="img/icon-pinterest.svg" alt="logoPinterest">
-                    <img src="img/icon-instagram.svg" alt="logoInstagram">
+                <div id="icons-Container">
+                    <img src="Img/icon-facebook.svg" alt="logoFacebook" class="icons-Image">
+                    <img src="Img/icon-youtube.svg" alt="logoYoutube" class="icons-Image">
+                    <img src="Img/icon-twitter.svg" alt="logoTwitter" class="icons-Image">
+                    <img src="img/icon-pinterest.svg" alt="logoPinterest" class="icons-Image">
+                    <img src="img/icon-instagram.svg" alt="logoInstagram" class="icons-Image">
                 </div>
             </article>
-            <article>
-                <p>Home</p>
-                <p>Pricing</p>
-                <p>Products</p>
-                <p>About Us</p>
+            <article id="ulFooter">
+                <div>
+                    <ul Class="listaFooter" type="none">
+                        <li><a href="https://www.google.com/" class="aFooter-ul">Home</a></li>
+                        <li><a href="https://www.google.com/"  class="aFooter-ul">Pricing</a></li>
+                        <li><a href="https://www.google.com/"  class="aFooter-ul">Product</a></li>
+                        <li><a href="https://www.google.com/"  class="aFooter-ul">About us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="listaFooter" type="none">
+                        <li><a href="https://www.google.com/" class="aFooter-ul">Careers</a></li>
+                        <li><a href="https://www.google.com/"  class="aFooter-ul">Community</a></li>
+                        <li><a href="https://www.google.com/"  class="aFooter-ul">Privacy Policy</a></li>
+                    </ul>
+                </div>
             </article>
-            <article>
-                <p>Careers</p>
-                <p>Community</p>
-                <p>Privacy Policy</p>
-            </article>
-            <article>
-                <form action="/registro" method="post">
-                    <div>
-                        <input type="email" name="email">
-                    </div>
-                    <button type="submit">Go</button>
+            <article id="form-Reserved">
+                    <form action="" method="post" class="form-footer">
+                        <label for="email" id="input"></label>
+                        <input type="email" name="usuario_correo" id="name" placeholder="Updates in your inbox..." class="input">
+                    <button class="botones"> <a href="https://www.google.com/" class="aBoton">Go</a></button>
                 </form>
                 <div>
-                    <p>Copyright 2020. All Rights Reserved</p>
+                    <p id="p-Form">Copyright 2020. All Rights Reserved</p>
                 </div>
             </article>
         </section>
