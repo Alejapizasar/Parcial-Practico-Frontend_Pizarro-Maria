@@ -3,12 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*body {
-    background-image: url(/Img/bg-tablet-pattern.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}*/ 
-/* header donde esta el logo y lista de nav*/
 header{
     display:flex;
     justify-content: space-around;
@@ -39,6 +33,9 @@ header{
 }
 .aHeader:hover {
     color: #B3B2B7;
+}
+#botonHamburguesa {
+    display: none;
 }
 .botones {
     background-color: #f3603b;
@@ -202,6 +199,9 @@ h1 {
     text-align: center;
     padding: 12px 10px 15px 10px;
 }
+#menu-Hambur-lateral{
+    display: none;
+}
 /* aqui empieza el footer que estara dividido en dos partes*/
 footer{
     display: flex;
@@ -331,7 +331,69 @@ footer{
     
 }
 @media (max-width: 900px){
+/* header mobile menu hamburguesa e imagen*/
     #navHeader{
         display: none;
+    }
+    #imgHeader{
+        size: 100%;
+    }
+    #botonHeader{
+        display:none;
+    }
+    #botonHamburguesa {
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        border-width: 0;
+    }
+    .fa-bars:before {
+        content: "\f0c9";
+        color: #242E53;
+        font-size: 25px;
+    }
+/*main mobile*/ 
+    main{
+        display: flex;  
+        flex-direction: column-reverse;
+    }
+    #seccionMain{
+        display: flex;
+    }
+/*seccion subtitulos mobile*/
+    #seccionSubtitulos {
+        display: flex;
+        flex-direction: column;
+    }
+/* seccion perfiles mobile*/
+    #seccionPerfiles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    #perfiles {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    }
+    .cardPerfiles {
+        display: flex;
+        flex-direction: column;
+    }
+    #cardMobile{
+        display: none;
+    }
+    #menu-Hambur-lateral{
+        display: flex;
+    }
+    .fa-ellipsis-h:before {
+        content: "\f141";
+        color:rgb(242, 143, 118);
+    }
+    #subtituloPerfiles {
+        font-size: 24px;
+        line-height: 50px;
+        font-weight: bold;
     }
 }

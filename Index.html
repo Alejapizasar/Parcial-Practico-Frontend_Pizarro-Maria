@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
     <link href="Css/Style.css" rel="stylesheet">
     <title>Examen Final - Practico</title>
 </head>
@@ -24,20 +25,9 @@
                 <li><a href="https://www.google.com/" class="aHeader">Community</a></li>
             </ul>
         </nav>
-        <button class="botones"> <a href="https://www.google.com/" class="aBoton">Get Started</a></button>
-<!-- diseño mobil hamburger menu escondido en desktop-->
-        <!-- <nav role="navigation">
-            <div id="menuToggle">
-                <input type="checkbox" />
-                <ul id="menu" type="none">
-                    <li><a href="https://www.google.com/" class="aHeader">Pricing</a></li>
-                    <li><a href="https://www.google.com/" class="aHeader">Product</a></li>
-                    <li><a href="https://www.google.com/" class="aHeader">Abour us</a></li>
-                    <li><a href="https://www.google.com/" class="aHeader">Careers</a></li>
-                    <li><a href="https://www.google.com/" class="aHeader">Community</a></li>
-                </ul>
-                </div>
-        </nav> -->
+        <button class="botones" id="botonHeader"> <a href="https://www.google.com/" class="aBoton">Get Started</a></button>
+<!-- diseño mobile hamburger header-->
+        <button id="botonHamburguesa"><i class="fas fa-bars"></i></button>
     </header>
 <!-- Main donde esta titulo e imagenes de graficos -->
     <main>
@@ -86,7 +76,7 @@
             <h2 id="subtituloPerfiles">What they´ve said</h2>
         </article>
         <article id="perfiles">
-            <div class="cardPerfiles">
+            <div class="cardPerfiles" id="cardMobile">
                 <img src="Img/avatar-anisha.png"  class="imgPerfiles" alt="perfilAnisha">
                 <h4 class="h4-Perfiles">Anisha Li</h4>
                 <p class="p-Perfiles">“Manage has supercharged our team´s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
@@ -96,11 +86,12 @@
                 <h4 class="h4-Perfiles">Ali Bravo</h4>
                 <p class="p-Perfiles">“We have been able to cancel so many other subscriptions since using manage. There ir no more cross-channel confusion and everyone is much more focused.”</p>
             </div>
-            <div class="cardPerfiles">
+            <div class="cardPerfiles" id="cardMobile">
                 <img src="Img/avatar-richard.png"  class="imgPerfiles" alt="perfilRichard"> 
                 <h4 class="h4-Perfiles">Richard Watts</h4>
                 <p class="p-Perfiles">“Manage allows us to provide structure and process. It keeps us organized and focused. I can´t stop recommending them to everyone i talk to!”</p>
             </div>
+            <div id="menu-Hambur-lateral"><i class="fas fa-ellipsis-h"></i></div>
         </article>
         <article>
             <button class="botones"> <a href="https://www.google.com/" class="aBoton">Get Started</a></button>
