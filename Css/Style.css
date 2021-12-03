@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-image: url('../Img/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
+    background-position-x: 800px;
+    background-position-y: -250px;
+}
+/*header*/
 header{
     display:flex;
     justify-content: space-around;
@@ -85,6 +92,12 @@ h1 {
     font-weight: 500;
     line-height: 26px;
     padding: 0px 100px 30px 0px;
+} 
+/* background*/
+#background {
+    background-image: url('../Img/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
+    background-position-x: -500px;
 }
 /* seccion subtitulos y parrafos numerados*/
 #seccionSubtitulos {
@@ -139,9 +152,10 @@ h1 {
     color: #B3B2B7;
     font-family: 'Be Vietnam Pro', sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 16.3px;
     line-height: 25px;
     padding: 10px 10px 40px;
+    margin-right: 50px;
 }
 /* seccion sibtitulo centrado y perfiles con imagenes*/
 #seccionPerfiles{
@@ -151,7 +165,6 @@ h1 {
     margin: 60px 5px 10px 90px;
     padding: 10px 50px 80px 10px;
     gap: 60px;
-    ;
 }
 #subtituloPerfiles{
     color: #242E53;
@@ -211,7 +224,10 @@ footer{
     justify-content: space-between;
     flex-wrap: nowrap;
     align-items: center;
-    padding: 40px 110px;
+    padding: 40px 110px;   
+    background-image: url('../Img/bg-simplify-section-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #orangeFooterH{
     color: rgb(255, 255, 255);
@@ -340,7 +356,6 @@ input:invalid {
 /* header mobile menu hamburguesa e imagen*/
     header {
         margin: 0;
-        display: flex;
         justify-content: space-between;
     }
     #imgHeader{
@@ -370,7 +385,6 @@ input:invalid {
         margin: 0%;
         padding: 0;
         width: 100%;
-        display: flex;  
         flex-direction: column-reverse;
     }
     #seccionMain{
@@ -397,11 +411,14 @@ input:invalid {
         width: 100%;
         padding: 12px;
     }
+/* background*/
+#background {
+    background-image: none;
+}
 /*seccion subtitulos mobile*/
     #seccionSubtitulos {
         margin: 0;
         padding: 0;
-        display: flex;
         flex-direction: column;
     }
     #subtitulo {
@@ -433,9 +450,6 @@ input:invalid {
 }
 /* seccion perfiles mobile*/
     #seccionPerfiles {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin: 0;
     padding: 20px;
     gap: 30px;
@@ -478,11 +492,13 @@ input:invalid {
 /*Footer*/
     #seccionNaranja{
         margin: 0;
-        display: flex;
         flex-direction: column;
         padding: 20px;
         height: 350px;
         justify-content: center;
+        background-image: url('../Img/bg-simplify-section-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
     }
     #orangeFooterH {
         width: auto;
@@ -501,7 +517,7 @@ input:invalid {
     justify-content: space-between;
     }
     #form-Reserved {
-        height: 30%;
+        justify-content: center;
     }
     #p-Form {
         display: none;
@@ -511,19 +527,15 @@ input:invalid {
     }
     #ulFooter {
         width: 100%;
-        display: flex;
         justify-content: space-evenly;
-        flex-direction: row;
         flex-wrap: wrap;
         align-content: center;
-        align-items: flex-start;
     }
     .aFooter-ul:hover {
         color: #eda575;
     }
     #article-Icon-Logo {
     flex-direction: column-reverse;
-    justify-content: space-between;
     padding: 15px;
     }
     .icons-Image {
@@ -533,10 +545,9 @@ input:invalid {
     #p-icon-logo{
         display: flex;
         color: #8C8C94;
-        border-radius: 50px;
         font-family: 'Be Vietnam Pro', sans-serif;
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 18px;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 15px;
     }
 }
