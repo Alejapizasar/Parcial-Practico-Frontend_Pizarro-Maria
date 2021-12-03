@@ -126,10 +126,6 @@ h1 {
 .parrafos-conNumeros{
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    justify-content: center;
-    align-content: flex-start;
 }
 .h4-SubNumero{
     color: #323851;
@@ -330,14 +326,18 @@ footer{
     line-height: 18px;
     
 }
+
+/* aqui empiezan la version mobile, usando media querys */
 @media (max-width: 900px){
 /* header mobile menu hamburguesa e imagen*/
     header {
-        padding: 0;
         margin: 0;
+        display: flex;
+        justify-content: space-between;
     }
     #imgHeader{
-        size: 100%;
+        width: 130px;
+        padding: 10px;
     }
     #navHeader{
         display: none;
@@ -350,6 +350,7 @@ footer{
         display: flex;
         align-items: center;
         border-width: 0;
+        padding: 10px;
     }
     .fa-bars:before {
         content: "\f0c9";
@@ -369,19 +370,24 @@ footer{
         display: flex;
         justify-content: center;
         flex-direction: column;
+        padding-bottom: 70px;
     }
     h1 {
-        font-size: 44px;
+        font-size: 38px;
         text-align: center;
-        line-height: 58px;    
+        line-height: 50px;
+        padding: 0px 16px;
+        font-weight: 600;
     }
     .parrafo {
-    padding: 20px;
-    text-align: justify;
-    color:#B9B9C1;
+        padding: 30px;
+        text-align: center;
+        color: #B9B9C1;
+        font-size: 14px;
     }
     #img-Graficos {
         width: 100%;
+        padding: 12px;
     }
 /*seccion subtitulos mobile*/
     #seccionSubtitulos {
@@ -391,18 +397,40 @@ footer{
         flex-direction: column;
     }
     #subtitulo {
-        padding: 0;
+        padding: 20px;
         margin: 0;
         text-align: center;
+        padding-bottom: 10px;
+        font-size: 30px;
     }
 .cajas-numerosParrafos {
     margin: 0;
+    padding: 15px;
+    }          
+.p-SubNumero{
+    font-size: 13px;
+    font-weight: 400;
+}
+.h4-SubNumero{
+    border-radius: 20px;
+    background-color: rgba(247, 207, 196, 0.378);
+    font-size: 14px;
+    padding: 7px 22px;
+}
+.numeros{
+    margin: 0;
+    position: relative;
+    left: 18px;
+    padding: 8px 20px;
 }
 /* seccion perfiles mobile*/
     #seccionPerfiles {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
+    padding: 20px;
+    gap: 30px;
     }
     #perfiles {
     display: flex;
@@ -414,6 +442,14 @@ footer{
         display: flex;
         flex-direction: column;
     }
+    .imgPerfiles{
+        width: 67px;
+    }
+    .p-Perfiles{
+        font-weight: 400;
+    font-size: 13px;
+    padding: 25px;
+    }
     #cardMobile{
         display: none;
     }
@@ -423,10 +459,32 @@ footer{
     .fa-ellipsis-h:before {
         content: "\f141";
         color:rgb(242, 143, 118);
+        font-size: 24px;
     }
     #subtituloPerfiles {
         font-size: 24px;
         line-height: 50px;
         font-weight: bold;
+        padding-bottom: 50px;
+    }
+/*Footer*/
+    #seccionNaranja{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        height: 350px;
+        justify-content: center;
+    }
+    #orangeFooterH {
+        width: auto;
+        height: 200px;
+        text-align: center;
+    }
+    #seccionOscura {
+        display: flex;
+        flex-direction: column;
+        height: 450px;
+        padding: 10px;
     }
 }
