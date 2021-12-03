@@ -263,6 +263,9 @@ footer{
     flex-wrap: wrap;
     height: 50%;
 }
+#p-icon-logo {
+    display: none;
+}
 #icons-Container {
     display: flex;
     flex-direction: row;
@@ -317,14 +320,19 @@ footer{
     line-height: 19px;
     padding: 12px;
 }
+input:valid {
+    color: rgb(0, 128, 0);
+}
+input:invalid {
+    color: rgb(255, 0, 0);
+}   
 #p-Form{
     color: #8C8C94;
     border-radius: 50px;
     font-family: 'Be Vietnam Pro', sans-serif;
     font-weight: 600;
     font-size: 12px;
-    line-height: 18px;
-    
+    line-height: 18px;    
 }
 
 /* aqui empiezan la version mobile, usando media querys */
@@ -483,8 +491,52 @@ footer{
     }
     #seccionOscura {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         height: 450px;
         padding: 10px;
+        width: auto;
+    }
+    #flex-direction {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    }
+    #form-Reserved {
+        height: 30%;
+    }
+    #p-Form {
+        display: none;
+    }
+    #form-Reserved {
+        height: 30%;
+    }
+    #ulFooter {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: flex-start;
+    }
+    .aFooter-ul:hover {
+        color: #eda575;
+    }
+    #article-Icon-Logo {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding: 15px;
+    }
+    .icons-Image {
+        width: 30px;
+        margin: 10px;
+    }
+    #p-icon-logo{
+        display: flex;
+        color: #8C8C94;
+        border-radius: 50px;
+        font-family: 'Be Vietnam Pro', sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
     }
 }
